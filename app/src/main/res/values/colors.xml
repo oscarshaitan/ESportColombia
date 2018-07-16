@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#565656</color>
+    <color name="colorPrimaryDark">#45535353</color>
+    <color name="colorAccent">#2949fa</color>
+    <color name="text">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="pubg_yellow">#f1ae57</color>
+
+    <color name="colorPrimaryL">#ececec</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="DarkGray">#3e3e3e</color>
+
+    <color name="filter">#ff4b6c</color>
+
+
+
+</resources>

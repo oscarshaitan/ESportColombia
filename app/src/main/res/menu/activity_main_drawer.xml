@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home_pubg_50"
+            android:title="Home" />
+        <item
+            android:id="@+id/map"
+            android:icon="@drawable/maps_pubg_50"
+            android:title="Map" />
+        <item
+            android:id="@+id/staff"
+            android:icon="@drawable/staff_black_50"
+            android:title="Staff" />
+        <item
+            android:id="@+id/messenger"
+            android:icon="@drawable/fb_msn_pubg_50"
+            android:title="Messenger" />
+        <item
+            android:id="@+id/facebook"
+            android:icon="@drawable/fb_pubg_50"
+            android:title="Facebook" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout_black_50"
+            android:title="Logout" />
+    </group>
+</menu>
