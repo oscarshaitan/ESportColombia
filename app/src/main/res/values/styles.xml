@@ -9,11 +9,15 @@
         <item name="textAppearanceListItem">@style/list_item_appearance</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="actionMenuTextColor">@color/text</item>
+        <item name="colorPrimary">@color/filter</item>
+        <item name="colorAccent">@color/DarkGray</item>
+        <item name="android:textColorSecondary">@color/text</item>
     </style>
+
     <style name="list_item_appearance">
         <item name="android:textSize">25dp</item>
         <item name="android:fontFamily">@font/pubg_font5</item>

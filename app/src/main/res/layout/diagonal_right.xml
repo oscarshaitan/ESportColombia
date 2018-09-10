@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/transparent">
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/pc50"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:rotation="14"
+        android:src="@drawable/pc"
+        android:layout_marginStart="5dp" />
+    <ImageView
+        android:id="@+id/pc49"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:rotation="14"
+        android:src="@drawable/pc"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginStart="2.5dp" />
+    <ImageView
+        android:id="@+id/pc48"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:rotation="14.5"
+        android:src="@drawable/pc"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginStart="2.5dp" />
+    <ImageView
+        android:id="@+id/pc47"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:rotation="14.5"
+        android:src="@drawable/pc"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginStart="2.5dp" />
+    <ImageView
+        android:id="@+id/pc46"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:rotation="14.5"
+        android:src="@drawable/pc"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginStart="2.5dp" />
+
+</LinearLayout>

@@ -1,8 +1,11 @@
 <resources>
 
-    <style name="AppTheme.NoActionBar">
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="actionMenuTextColor">@color/text</item>
+        <item name="colorPrimary">@color/filter</item>
+        <item name="colorAccent">@color/DarkGray</item>
+        <item name="android:textColorSecondary">@color/text</item>
     </style>
 </resources>

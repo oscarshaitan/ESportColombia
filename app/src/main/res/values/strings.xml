@@ -11,4 +11,30 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_maps">Map</string>
 
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- 100: No reconoce la respuesta
+         200: Interrupción forzada
+         300: Error de ejecución de algoritmo
+         400: Error de Url mal formada
+         404: No cnx con el servidor
+         500: No existe tal algoritmo
+         600: Error KeyManagment
+
+         700: Wrong user/pass
+
+         -->
+    <string name="ERROR_100">Error 100, contactar con soporte técnico</string>
+    <string name="ERROR_404">No se logró conexción con el servidor, pasando a modo offline</string>
+    <string name="ERROR_200">Error 200, contactar con soporte técnico</string>
+    <string name="ERROR_300">Error 300, contactar con soporte técnico</string>
+    <string name="ERROR_400">Error 400, contactar con soporte técnico</string>
+    <string name="ERROR_500">Error 500, contactar con soporte técnico</string>
+    <string name="ERROR_600">Error 600, contactar con soporte técnico</string>
+    <string name="ERROR_700">Usuario o contraseña equivocados</string>
+    <string name="title_activity_main2">Map</string>
+
+
 </resources>

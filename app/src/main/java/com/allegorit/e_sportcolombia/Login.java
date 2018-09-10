@@ -1,19 +1,21 @@
 package com.allegorit.e_sportcolombia;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Base64;
 import android.view.View;
-import android.widget.ProgressBar;
+import android.widget.ImageView;
 import android.widget.VideoView;
 
 import com.crashlytics.android.Crashlytics;
@@ -28,7 +30,6 @@ import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
-import io.fabric.sdk.android.Fabric;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,17 +39,19 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
+import io.fabric.sdk.android.Fabric;
+
 
 public class Login extends AppCompatActivity {
     CallbackManager callbackManager;
-    private VideoView myVideoView,myVideoView2;
+    private VideoView myVideoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_login);
-
+        haskey();
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
 
@@ -68,6 +71,7 @@ public class Login extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
 
                 graphFBData(loginResult.getAccessToken());
+
             }
             @Override
             public void onCancel() {
@@ -90,10 +94,10 @@ public class Login extends AppCompatActivity {
             ActivityCompat.requestPermissions(this,
                     new String[]{android.Manifest.permission.ACCESS_COARSE_LOCATION}, 0);
         }
-
         myVideoView = (VideoView)findViewById(R.id.video);
 
-        try {            myVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.esp_logo_50));
+        try {
+            myVideoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.esp_logo_50));
             myVideoView.start();
 
             myVideoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -103,7 +107,8 @@ public class Login extends AppCompatActivity {
                         graphFBData(accessToken);
                     }else {
                         loginButton.setVisibility(View.VISIBLE);
-                        mp.start();
+                        myVideoView.seekTo(3500);
+                        myVideoView.pause();
                     }
                 }
             });
@@ -111,6 +116,9 @@ public class Login extends AppCompatActivity {
         catch (Exception e){
             e.getStackTrace();
         }
+        //Intent intent = new Intent(this,MainActivity.class);
+        //startActivity(intent);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
 
     public static boolean hasPermissions(Context context, String... permissions) {

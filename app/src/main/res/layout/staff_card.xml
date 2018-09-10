@@ -52,7 +52,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
-                android:src="@drawable/zoro2r" />
+                android:src="@drawable/zoro"/>
         </android.support.v7.widget.CardView>
 
     </RelativeLayout>
@@ -70,7 +70,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/pubg_font5"
         android:text="Oscar"
-        android:textColor="@color/black"
+        android:textColor="@color/filter"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +91,7 @@
         android:layout_marginTop="4dp"
         android:fontFamily="@font/pubg_font5"
         android:text="Shaitan"
-        android:textColor="@color/black"
+        android:textColor="@color/filter"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -157,7 +157,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pubg_font5"
-                    android:text="Age"
+                    android:text="Level"
                     android:textAlignment="center"
                     android:textColor="@color/filter"
                     android:textSize="15dp" />
