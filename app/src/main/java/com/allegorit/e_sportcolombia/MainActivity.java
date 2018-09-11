@@ -205,12 +205,12 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
             //diagonal right
 
             View DR = findViewById(R.id.diagonal_right);
-            for(i=45; i<=46;i++){
+            for(i=45; i<=49;i++){
                 if(pcObjs.get(i).getPing().equals("0")){
-                    ((ImageView)DR.findViewById(pcs[i])).setImageDrawable(getResources().getDrawable(R.drawable.pc_off));
+                    ((ImageView)DR.findViewById(pcs[i])).setImageDrawable(getResources().getDrawable(R.drawable.pc));
                 }
                 else if(pcObjs.get(i).getPing().equals("1")){
-                    ((ImageView) DR.findViewById(pcs[i])).setImageDrawable(getResources().getDrawable(R.drawable.pc));
+                    ((ImageView) DR.findViewById(pcs[i])).setImageDrawable(getResources().getDrawable(R.drawable.pc_off));
                 }
                 else if(pcObjs.get(i).getPing().equals("2")){
                     ((ImageView) DR.findViewById(pcs[i])).setImageDrawable(getResources().getDrawable(R.drawable.pc_supp));
